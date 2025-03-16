@@ -90,14 +90,14 @@ const TaskList = ({ tasks, editTaskOnContract }) => {
     }
 
     return (
-        <ul className="w-3/4 flex flex-col items-center justify-center mr-auto ml-60 ">
+        <ul className="w-3/4 flex flex-col items-center justify-center">
             {taskArray.map((task) => (
-                <li key={task.taskId} className="p-2 mb-2 flex w-full justify-between text-2xl ">
-                    <div className="flex w-1/2 ml-14">
+                <li key={task.taskId} className="p-2  flex w-full bg-gradient-to-r from-cyan-100 via-orange-100 to-blue-100 justify-between text-2xl rounded-xl shadow-xl my-2 hover:transform hover:scale-101 transition duration-200 ease-in-out">
+                    <div className="flex w-3/4">
                         <p>{task.task}</p>
-                        <p className="text-2xl ml-auto mr-27">{task.completed ? "✔" : "✖️"}</p>
+                        <p className="text-2xl ml-auto mr-50 ">{task.completed ? "✔" : "✖️"}</p>
                     </div>
-                    <div className="mr-43 space-x-2 ">
+                    <div className="space-x-2 ">
                     <button onClick={() => handleMarkTask(task.taskId)} className="hover:cursor-pointer">
                         <img className="size-6 mr-2" src="arrow.png" alt="Edit" />
                     </button>
