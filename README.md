@@ -30,7 +30,7 @@ https://sepolia.etherscan.io/address/0x47fe4d9e8c12ebc8fb775f612e2350ba6e5d2abc
 1. **Clone the repository:**
 ```bash
 git clone https://github.com/YashSharma22003/task-manager-dapp.git
-cd task-dapp
+cd task-manager-dapp
 ```
 2. **cd to frontend**
 ```bash
